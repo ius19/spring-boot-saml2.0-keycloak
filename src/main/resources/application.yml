@@ -1,0 +1,19 @@
+server:
+  port: 9090
+  servlet:
+    context-path: /
+spring:
+  main:
+    allow-circular-references: true
+
+keycloak:
+  client: spring-boot-keycloak
+
+saml:
+  keystore:
+    path: classpath:/saml/keystore.jks
+    password: store123
+    alias: spring-boot-keycloak
+  url:
+    descriptor: http://10.30.1.192:8080/realms/team1/protocol/saml/descriptor
+
