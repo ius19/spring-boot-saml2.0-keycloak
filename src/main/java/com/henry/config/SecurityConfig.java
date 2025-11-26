@@ -164,7 +164,7 @@ public class SecurityConfig {
                 .antMatchers("/").permitAll()
                 .antMatchers("/saml/**").permitAll()
                 //.antMatchers("/css/**").permitAll()
-                //.antMatchers("/img/**").permitAll()
+                .antMatchers("/images/**").permitAll()
                 //.antMatchers("/js/**").permitAll()
                 .anyRequest().authenticated();
         http
